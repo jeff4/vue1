@@ -1,11 +1,19 @@
-<script setup lang="ts">
+<script lang="ts">
+  export default {
+    data() {
+      return{
+        name: 'Kevin Chang',
+        status: false,
+      };
+    },
+  };
+
 </script>
 
 <template>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <h1>{{ name }}</h1>
+  <p v-if="status">Member is active</p>
+  <p v-else>Member is inactive</p>
 </template>
 
 <style lang="scss">
