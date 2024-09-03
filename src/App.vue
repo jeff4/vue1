@@ -1,3 +1,4 @@
+<!--Top of document-->
 <script lang="ts">
 
   export default {
@@ -12,8 +13,7 @@
 
 </script>
 
-
-<!--- HTML under here -->
+<!--- ~~~~~~~~~~~ HTML under here -~~~~~~~~~~ -->
 
 <template>
   <h1>{{ name }}</h1>
@@ -22,15 +22,14 @@
 
   <br> <br> 
   <h3>Tasks:</h3>
-
-
-
+  <ul>
+    <li style="margin: 0 0 -10px 15px" v-for="task in tasks" :key="task">{{ task }}</li>
+  </ul>
 
 </template>
 
 
-
-<!--- Styles under here -->
+<!--- ~~~~~~~~~~~ CSS under here -~~~~~~~~~~ -->
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
